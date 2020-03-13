@@ -169,33 +169,74 @@ else{
     echo("<br>El mayor ingreso lo tiene la sucursal B <br>");
 }
 
-/*
-function calcularSalarioA($salario1,$salario2,$salario3,$salario4,$salario5){
-    $sumatoriaSalarios = ($salario1 + $salario2 + $salario3 + $salario4 + $salario5);
+echo "<br>";
+echo "<br>";
 
-    echo(" <br> El salario de la sucural A es de: $" . $sumatoriaSalarios);
+echo "<strong>Ejercicios numero 6. </strong>";
+echo "<br>";
+echo "<br>";
+echo "***********************************************************************";
+echo "<br>";
 
+$numerosPares=array(
+'El 1° numero par es: '=>2, 
+'El 2° numero par es: '=>4,
+'El 3° numero par es: '=>6,
+'El 4° numero par es: '=>8,
+'El 5° numero par es: '=>10,
+'El 6° numero par es: '=>12,
+'El 7° numero par es: '=>14,
+'El 8° numero par es: '=>26,
+'El 9° numero par es: '=>18,
+'El 10° numero par es: '=>20);
+
+
+
+foreach($numerosPares as $clave=>$valor){
+    echo "<br>" . $clave . " " . $valor;
 }
 
-calcularSalarioA(4000000, 3000000, 4000000, 3000000, 3000000);
+echo "<br>";
+echo "<br>";
+
+echo "<strong>Ejercicios numero 7. </strong>";
+echo "<br>";
+echo "<br>";
+echo "***********************************************************************";
+echo "<br>";
+$salpicon = array ('dulce1'=> "banano"."<br>" ,'dulce2'=> "manzana"."<br>" ,'dulce3'=> "durazno" ."<br>",'acido1'=> "piña" ."<br>",'acido2'=> "naranja" ."<br>",'acido3'=> "lulo"  );
+
+print_r($salpicon);
 
 
+echo "<br>";
+echo "<br>";
+echo "<strong>Ejercicios numero 8. </strong>";
+echo "<br>";
+echo "<br>";
+echo "***********************************************************************";
+echo "<br>";
 
-function calcularSalarioB($salarioB){
+include 'funciones.php';
 
-}
+calcularedad(1991,2020);
+calcularedad2(1995,2020);
+calcularedad3(1987,2020);
 
-calcularSalarioB(20000000);
 
+echo "<br>";
+echo "<br>";
+echo "<strong>Ejercicios numero 9. </strong>";
+echo "<br>";
+echo "<br>";
+echo "***********************************************************************";
+echo "<br>";
 
-function calcularSalarioC($salarioC){
-
-}
-
-calcularSalarioC(15000000);
-
-*/
-
+calcularEstatura(1.65 . " m");
+echo "<br>";
+calcularEstatura(1.78 . " m");
+echo "<br>";
+calcularEstatura(1.95 . " m");
 
 
 echo "<br>";
