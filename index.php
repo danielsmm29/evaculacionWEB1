@@ -61,7 +61,7 @@ echo "<br>";
 echo "<strong>Ejercicios numero 3. </strong>";
 echo "<br>";
 echo "<br>";
-echo "****************************tienda Spring Step*******************************************";
+echo "***********************************************************************";
 echo "<br>";
 
 $cantidadZapatos = 3;
@@ -195,6 +195,41 @@ function calcularSalarioC($salarioC){
 calcularSalarioC(15000000);
 
 */
+
+
+
+echo "<br>";
+echo "<br>";
+echo "<strong>Ejercicios numero 10. </strong>";
+echo "<br>";
+echo "<br>";
+echo "***********************************************************************";
+echo "<br>";
+
+$futbolistas=array(
+    'Jugador1'=>array('Nombre'=>"Radamel Falcao", 'Año'=>1986, 'Posicion'=>"Delantero", 'Estatura'=>1.77),
+    'Jugador2'=>array('Nombre'=>"James Rodriguez", 'Año'=>1991, 'Posicion'=>"Medio campista", 'Estatura'=>1.81),
+    'Jugador3'=>array('Nombre'=>"Juan Cuadrados", 'Año'=>1988, 'Posicion'=>"Delantero", 'Estatura'=>1.78),
+    'Jugador4'=>array('Nombre'=>"Yerry Mina", 'Año'=>1994, 'Posicion'=>"Defensor", 'Estatura'=>1.95),
+    'Jugador5'=>array('Nombre'=>"David Ospina", 'Año'=>1988, 'Posicion'=>"Portero ", 'Estatura'=>1.83),
+    'Jugador6'=>array('Nombre'=>"Davinsón Sanchez", 'Año'=>1996, 'Posicion'=>"Defensor ", 'Estatura'=>1.87 ),
+    'Jugador7'=>array('Nombre'=>"Duvan Zapata", 'Año'=>1991, 'Posicion'=>"Delantero ", 'Estatura'=>1.86),
+    'Jugador8'=>array('Nombre'=>"Wilmar Barrios", 'Año'=>1993, 'Posicion'=>"Medio campista", 'Estatura'=>1.78),
+    'Jugador9'=>array('Nombre'=>"Mateus Uribe", 'Año'=>1991, 'Posicion'=>"Medio campista", 'Estatura'=>1.80)
+);
+
+
+foreach($futbolistas as $clavefutbol=>$valorfutbol){
+
+    foreach($valorfutbol as $clave=>$valor){
+        echo $clave . " : ";
+        echo $valor;
+        echo "<br>";
+
+    }
+    echo "<br>";
+}
+
 
 
 
