@@ -1,4 +1,6 @@
 <?php 
+
+echo "<br>";
 $numero1 = 50;
 $numero2 = 10;
 
@@ -27,6 +29,8 @@ echo "<br>";
 echo "***********************************************************************";
 echo "<br>";
 
+
+echo "<br>";
 $peso = 85;
 $altura = 1.78;
 $imc = $peso /($altura*$altura);
@@ -57,14 +61,10 @@ echo "<br>";
 echo "<strong>Ejercicios numero 3. </strong>";
 echo "<br>";
 echo "<br>";
-echo "***********************************************************************";
+echo "****************************tienda Spring Step*******************************************";
 echo "<br>";
 
-
-
-echo ("<br><br>Ejercicio 3 <br>");
-
-$cantidadZapatos = 5;
+$cantidadZapatos = 3;
 $valorZapatos = 150000;
 $totalCompra = $cantidadZapatos*$valorZapatos;
 $vdescuento =0;
@@ -84,10 +84,15 @@ if ($cantidadZapatos==3){
 }
 echo("Cantidad Vendida: ".$cantidadZapatos."<br> Valor zapatos: ".$valorZapatos."<br> Costo Neto: ".$totalCompra.
 "<br> Descuento es: ".$descuento."%<br> Valor del Descuento:".$vdescuento."<br> Valor a Pagar es:".$valorPagar);
+echo "<br>";
+echo "<br>";
 
 
-
-echo ("<br><br>Ejercicio 4 <br>");
+echo "<strong>Ejercicios numero 4. </strong>";
+echo "<br>";
+echo "<br>";
+echo "***********************************************************************";
+echo "<br>";
 
 
 
@@ -112,32 +117,84 @@ if($hTrabajadas <=40){
 }
 
 
-echo ("<br><br>Ejercicio 5 <br>");
-
-$persona1=Juan Diego;
-$persona2=Maria;
-$persona3=Luis;
-$persona4=Karen;
-$persona5=Felipe;
-$telefono1=3125896478;
-$telefono2=3112056336;
-$telefono3=3155569876;
-$telefono4=3225896332;
-$telefono5=3135598763;
-$direccion1=calle65#32;
-$direccion2=calle49#66;
-$direccion3=calle56#57;
-$direccion4=calle36#28;
-$direccion5=calle62#55;
-$salario1=1500000;
-$salario2=3000000;
-$salario3=2600000;
-$salario4=3200000;
-$salario5=1550000;
-$totalsalario=$salario1+$salario2+$salario3+$salario4+$salario5;
+echo "<br>";
+echo "<br>";
 
 
+echo "<strong>Ejercicios numero 5. </strong>";
+echo "<br>";
+echo "<br>";
+echo "***********************************************************************";
+echo "<br>";
 
+
+$sucursalA=array(
+    'usuario1'=>array('Nombre'=>"Santiago", 'Telefono'=>"3107777777", 'Direccion'=>"carrera 14d#45d-23", 'Salario'=>"$2000000"),
+    'usuario2'=>array('Nombre'=>"Camila", 'Telefono'=>"3145555555", 'Direccion'=>"carrera 30d#34-88", 'Salario'=>"$1500000"),
+    'usuario3'=>array('Nombre'=>"Antonio", 'Telefono'=>"3206666666", 'Direccion'=>"calle 34d#44d-83", 'Salario'=>"$5000000"),
+    'usuario4'=>array('Nombre'=>"Margarita", 'Telefono'=>"3163333333", 'Direccion'=>"carrera 34d#45g-26", 'Salario'=>"$4000000"),
+    'usuario5'=>array('Nombre'=>"Armando", 'Telefono'=>"3202222222", 'Direccion'=>"calle 44d#147d-123", 'Salario'=>"$2000000")
+);
+
+
+foreach($sucursalA as $clavemultidi=>$valormultidi){
+
+    foreach($valormultidi as $clave=>$valores){
+
+        echo($valores) . " - ";
+        
+    }
+
+    echo("<br>");
+   
+}
+
+
+$salario1=2000000;
+$salario2=1500000;
+$salario3=5000000;
+$salario4=4000000;
+$salario5=5000000;
+
+$calcularSalarios = $salario1+$salario2+$salario3+$salario4+$salario5;
+
+
+$sucursalB = (20000000);
+$sucursalC = (15000000);
+
+if ($calcularSalarios > $sucursalB){
+    echo("<br>El mayor ingreso lo tiene la sucursal A  <br>");
+}
+else{
+    echo("<br>El mayor ingreso lo tiene la sucursal B <br>");
+}
+
+/*
+function calcularSalarioA($salario1,$salario2,$salario3,$salario4,$salario5){
+    $sumatoriaSalarios = ($salario1 + $salario2 + $salario3 + $salario4 + $salario5);
+
+    echo(" <br> El salario de la sucural A es de: $" . $sumatoriaSalarios);
+
+}
+
+calcularSalarioA(4000000, 3000000, 4000000, 3000000, 3000000);
+
+
+
+function calcularSalarioB($salarioB){
+
+}
+
+calcularSalarioB(20000000);
+
+
+function calcularSalarioC($salarioC){
+
+}
+
+calcularSalarioC(15000000);
+
+*/
 
 
 
